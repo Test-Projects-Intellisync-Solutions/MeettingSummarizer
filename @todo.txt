@@ -1,0 +1,14 @@
+[x] Fix Tailwind v4/PostCSS config for Vite + ESM
+[x] Remove legacy Tailwind v2 plugins and config
+[x] Install autoprefixer and clean up dependencies
+[x] Rename postcss.config.js to postcss.config.cjs for ESM compatibility
+[x] Install lucide-react and shadcn-ui for modern UI components
+[ ] Redesign UI for a modern, clean look using Tailwind v4, shadcn/ui, Framer Motion, and Lucide icons
+[ ] Refactor App.tsx and all main components for new design
+[ ] Add beautiful header, card layout, drag-and-drop, modern forms, and summary display
+[ ] Polish feedback form and add subtle animations
+[ ] Ensure mobile responsiveness and accessibility
+
+[x] Added a 'Clear' button to the meeting notes input for quick reset and new summaries.
+[x] Renamed the app from 'Meeting Maestro' to 'Mnemos' (from Mnemosyne, Greek Titaness of memory and mother of the Muses).
+[x] Added 'by Intellisync Solutions' attribution in the header and updated footer accordingly.
