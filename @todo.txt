@@ -12,3 +12,8 @@
 [x] Added a 'Clear' button to the meeting notes input for quick reset and new summaries.
 [x] Renamed the app from 'Meeting Maestro' to 'Mnemos' (from Mnemosyne, Greek Titaness of memory and mother of the Muses).
 [x] Added 'by Intellisync Solutions' attribution in the header and updated footer accordingly.
+
+[x] Classic PDF parsing for document uploads implemented using pdf-parse in backend
+[ ] Frontend: Ensure PDF upload uses /api/upload-document and displays extracted text
+[ ] Frontend: Send both meeting notes and extracted text to /api/generate-summary
+[ ] Future: Add fallback to OpenAI Vision for images/scanned documents

@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import multer from 'multer';
+import type { Request, FileFilterCallback, File } from '../types/multer-types';
 
 // Resolve the directory path for the current module
 const __filename = fileURLToPath(import.meta.url);
@@ -62,7 +63,11 @@ app.use(express.urlencoded({ extended: true }));
 // Multer for handling multipart/form-data
 const upload = multer({ 
   storage: multer.memoryStorage(),
-  limits: { fileSize: 10 * 1024 * 1024 } // 10MB file size limit
+  limits: { fileSize: 10 * 1024 * 1024 }, // 10MB file size limit
+  fileFilter: (req: Request, file: File, cb: FileFilterCallback) => {
+    // Optional file filtering logic
+    cb(null, true);
+  }
 });
 
 // Import routes

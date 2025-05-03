@@ -95,7 +95,7 @@ const response = await fetch(`${BACKEND_URL}/api/generate-summary`, {
     if (!summary) return;
     setActionItemsLoading(true);
     try {
-      const response = await fetch('/extract-action-items', {
+      const response = await fetch('/api/extract-action-items', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ notesOrSummary: summary })

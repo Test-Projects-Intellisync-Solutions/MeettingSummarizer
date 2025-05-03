@@ -21,7 +21,7 @@
       "./node_modules/@types",
       "./src/types"
     ],
-    "types": ["node", "express"]
+    "types": ["node", "express", "multer"]
   },
   "include": [
     "src/**/*.ts", 

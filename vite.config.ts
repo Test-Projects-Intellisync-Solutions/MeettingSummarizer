@@ -9,9 +9,10 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     server: {
       port: 5176,
+      // Proxy /api requests to backend server during development
       proxy: {
         '/api': {
-          target: backendUrl,
+          target: backendUrl, // Defaults to http://localhost:5001
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, '/api')
         }

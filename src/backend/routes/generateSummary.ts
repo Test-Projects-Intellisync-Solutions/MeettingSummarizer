@@ -157,8 +157,8 @@ const handleGenerateSummary = async (
           }`
         }
       ],
-      max_tokens: 1050,
-      temperature: 0.7,
+      max_tokens: 4000,
+      temperature: 0.5,
       stream: true
     });
 
